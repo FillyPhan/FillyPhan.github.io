@@ -5,62 +5,115 @@
       <meta name="viewport" content="width=device-width, height=device-height,
       initial-scale= .84, user-scalable=no"></meta>
         <title>Cody's Portfolio</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Cody's Portfolio</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><button onclick="window.location.reload();"><a href="#"> Home </a></li></button>
+                <li><button onclick = "location.href= 'https:google.com'"><a href="#">Projects</a></li></button>
+              </ul>
+            </div>
+          </nav>
+          ...
     </head>
-   
-    <div class= "text1">Cody's Portfolio</div>
-    <div class= "text2">Cody's Portfolio</div>
-    <div class= "profileimage"></div>
-    
+    <div class = "grid-container">
+        <div class= "profileimage"></div>
+        <iframe class= "video" width="640" height="362" src="https://www.youtube.com/embed/cEYnSD4SxVw" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class = "Bio-title">About Me</p>
+        <p class = "Bio-text">Welcome to my portfolio, my name is Cody Marshall. I grew up in upstate NY and have had a computer in my hands since I was 6. I have always been very 
+            intrigued by the way alogorithms work, and how computers execute tasks. I built my first website in 2015 and have been involved in the world ever since. I am currently enrolled in a 37 week
+            professional certification course through MIT. It specializes in the MERN stack and Javascript. In my free time I build video games with Godot game engine and gdscript. 
+            When I can actually step away from my computer, I like to spend time with my close family and friends. I'm a big Philadelphia Eagles fan as well. Please feel free to contact me 
+            for any questions you may have!
+            
+            Github username: fillyphan
+            Linkedin profile url: https://www.linkedin.com/in/cody-marshall-b869b7216
+            Email: CM.Marshall26@gmail.com
+        </p>
+    </div>
     <style>
 
       body {
-        background-image:linear-gradient(45deg, lightblue, blue);
+        background-image:radial-gradient(circle, gray, black);
         
         }
       
-      .text1 {
-        font-family:Arial, Helvetica, sans-serif;
-        font-size:30px;
-        color:black;
-        padding: 10px;
-        margin-left: 40px;
-        
-      }
-
-      .text2 {
-        font-family: Helvetica, sans-serif;
-        font-size:30px;
-        color:rgb(255, 255, 255);
-        padding: 10px;
-        margin-top: -57px;
-        margin-left: 40px;
-        
+      .grid-container{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          padding:10px;
       }
       
       .profileimage {
+       
+        margin-top: 70px;
         content:url("me1.jpg");
         width:300px;
         height:300px;
-        top:8px;
-        left:230px;
+        border-radius: 10%;
+        border: 3px solid purple;
+        grid-row:1/1;
+        grid-column:1/1;
         padding: 10px;
-        border-radius: 10%
   
       }
-     
+
+      .Bio-text{
+          
+          font-size: large;
+          font-family: 'Courier New', Courier, monospace;
+          color:white;
+          grid-row: 3/3;
+         
+         
+      }
+      .Bio-title{
+          
+          font-size: 3em;
+          font-family: 'Courier New', Courier, monospace;
+          color:white;
+          grid-row: 2/3;
+          font-weight: bold;
+          text-decoration: underline purple;
+         
+          
+      }
+       .video{
+           grid-row: 1/2;
+           grid-column: 2/2;
+           margin-top: 50px;
+           border-radius: 10%;
+           border: 3px solid purple;
+           padding: 10px;
+
+       }
+
+       .navbar-brand{
+           background-image:linear-gradient(45deg, purple, black);
+           font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           
+
+       }
+
+       button{
+           height:50px;
+           background-image: linear-gradient(45deg, purple, black);
+           font-size: 20px;
+           font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           
+       }
+       
+      
 
     </style>
 
-    <body>
-      <a href="https://fillyphan.github.io/Magic-8-Ball/">Magic-8-Ball</a>
-      <a href="https://github.com/FillyPhan/Magic-8-Ball">Magic-8-Ball.README</a>
-        <br>
-      <a href="https://fillyphan.github.io/PurpleBall/">PurpleBall</a>
-      <a href="https://github.com/FillyPhan/PurpleBall">PurpleBall.README</a>
-        <br>
-      <a href="https://fillyphan.github.io/Real-Time-Bus-Tracker/">Real-Time-Bus-Tracker</a>
-      <a href="https://github.com/FillyPhan/Real-Time-Bus-Tracker">Real-Time-Bus-Tracker.README</a>  
-    </body>
+  
 
     
     
