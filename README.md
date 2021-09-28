@@ -5,7 +5,7 @@ This is a website to showcase all of my web development skills.
 Currently only two pages. It has a main page with my bio and a introduction video and a second page containing all my current projects. 
 
 # Usage
-Visit https://www.fillyphan.github.io/
+Visit https://fillyphan.github.io/
 
 # Future
 I would like to update this weekly to add everything I am currently working on, and also a games page. 
