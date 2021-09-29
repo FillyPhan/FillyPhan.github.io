@@ -1,14 +1,17 @@
 <html>
     <head>
+      
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, height=device-height,
       initial-scale= .84, user-scalable=no"></meta>
         <title>Cody's Portfolio</title>
+        
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
               <div class="navbar-header">
@@ -24,11 +27,16 @@
     </head>
     <body>
       
-    
+      
     <div class = "wrapper">
+        
+        <audio id="audio" src="heart-grab.wav" ></audio>
+        
         <div class= "profileimage"></div>
+        
         <iframe class= "video" width="640" height="362" src="https://www.youtube.com/embed/cEYnSD4SxVw" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
             <div>
         <p class = "Bio-title">About Me</p>
         <p class = "Bio-text">Welcome to my portfolio, my name is Cody Marshall. I grew up in upstate NY and have had a computer in my hands since I was 6. I have always been very 
@@ -45,25 +53,39 @@
         <p class = "contact">Email: CM.Marshall26@gmail.com</p>
             </div>
 
-        <div class="sphere">
+        <div class="sphere" onclick="play();">
           <div class="icon">CM</div>
+          <div class="icon2">CM</div>
         </div>
 
-          </div>
+      </div>
     
     <style>
       a{
-         color:purple;
+         color:white;
          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
          
   
       }
       a:hover{
-         color:white;
+         color:blueviolet;
      }
-      </style>
-  
+    </style>
+
+    <script>
+      
+      function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+      }
+   
+   </script>
+
+    
+    
 </body>
+  
+
     
     
 
